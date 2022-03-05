@@ -27,7 +27,7 @@ export default async function getGallery(req, res) {
 
     await cors(req, res)
 
-    let ret = [{image: "/a1.jpg", hash: "123"}, {image: "/a2.jpg", hash: "321"}, {image: "/a3.jpg", hash: "456"}]
+    let ret = [{key: "123", image: "/a1.jpg"}, {key: "321", image: "/a2.jpg"}, {key: "456", image: "/a3.jpg"}]
     return res.status(200).json({ data: ret, code: 200 })
 
 
